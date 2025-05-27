@@ -1,0 +1,11 @@
+TOP navigation
+side navigation
+main section
+side section
+
+css da flexboxების გამოყენების მეშვეობით
+
+
+1) მთელი დოკუმენტის თავიდანვე დაგეგმარება დაგვეხმარება
+იმაში რომ ეს 4 ნავიგაცია სწორად დავანაწილოთ 
+GRID ის მეშვეობით
