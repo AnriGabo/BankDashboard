@@ -16,9 +16,9 @@ const ShoppingCard2 = () => {
           paddingInline: "2rem",
           paddingBlock: "1.7rem",
           flexDirection: "row",
-          backgroundColor:"#004687",
-          alignItems:"center",
-          borderRadius:"10px 10px 0px 0px"
+          backgroundColor: "#004687",
+          alignItems: "center",
+          borderRadius: "10px 10px 0px 0px",
         }}
       >
         <Stack sx={{ flex: 1, gap: "1.3rem" }}>
@@ -70,20 +70,18 @@ const ShoppingCard2 = () => {
         <Box sx={{ flex: 1, fontWeight: "bold", fontSize: "1.3rem" }}>
           {" "}
           **** **** ** 0024
+        </Box>{" "}
+        <Box
+          sx={{
+            paddingInlineEnd: "2rem",
+          }}
+        >
+          <i>
+            <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem" }}>
+              VISA
+            </Typography>
+          </i>
         </Box>
-        <i>
-          {" "}
-          <Box
-            sx={{
-              display: "flex",
-              paddingInlineEnd: "2rem",
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-            }}
-          >
-            VISA
-          </Box>
-        </i>
       </Stack>
     </Stack>
   );

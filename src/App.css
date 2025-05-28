@@ -14,17 +14,9 @@
 .App-layout {
   display: grid;
   grid-template-areas:
-  /* გვაქვს ორი ჰორიზონტალური შრე, 3 სვეტი */
-  /* პირველი ჰორიზონტალურ სივრცეში სამივესვეტს ჰედერი იკავებს*/
-  /* მეორე ჰორიზონტალურში, მარცხნივ sidebar, შუა main
-  მარჯვნივ main */
     "header header header"
     "sidebar main side";
-
-  grid-template-columns: 270px 1fr 300px;
-  /* ორი შრეა, პირველი ანუ ჰედერი იკავებს 60 პიქსელს */
-  /* დანარჩენი sidebar main side, იკავებს სრულ სივრცეს
-  დოკუემნტის anu 1fr მთლიანად დარჩენილ ადგილს აღიქვამს */
+  grid-template-columns: 270px 1fr 350px;
   grid-template-rows: 75px 1fr;
   height: 100vh;
 }
@@ -36,3 +28,4 @@ body,
 html {
   background-color: #1c1c2e;
 }
+

@@ -44,7 +44,6 @@ const ShoppingCard = () => {
             flex: 1,
             gap: "1rem",
             alignItems: "flex-end",
-            
           }}
         >
           <Box>
@@ -81,17 +80,17 @@ const ShoppingCard = () => {
         >
           **** **** ** 0028
         </Box>
-        <i>
-          <Box
-            sx={{
-              paddingInlineEnd: "1rem",
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-            }}
-          >
-            VISA
-          </Box>
-        </i>
+
+        <Box
+          sx={{
+            paddingInlineEnd: "1rem",
+          
+          }}
+        >
+          <i>
+            <Typography sx={{fontWeight:"bold",fontSize:"1.2rem"}}>VISA</Typography>
+          </i>
+        </Box>
       </Stack>
     </Stack>
   );

@@ -3,6 +3,7 @@ import "./App.css";
 import SideBar from "./components/dashboard/SideBar";
 import { Divider } from "@mui/material";
 import InventoryDetail from "./components/inventoryDetail/InventoryDetail";
+import CardDetails from "./components/cardDetails/CardDetails";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         }}
       />
       <InventoryDetail />
+      <CardDetails />
     </div>
   );
 }
