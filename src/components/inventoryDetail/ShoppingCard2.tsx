@@ -1,27 +1,27 @@
-import PaymentIcon from "@mui/icons-material/Payment";
 import { Box, Stack, Typography } from "@mui/material";
-const ShoppingCard = () => {
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+
+const ShoppingCard2 = () => {
   return (
     <Stack
       sx={{
-        borderRadius: "10px",
         marginBlock: "2rem",
         minWidth: "19rem",
         maxWidth: "23rem",
+        borderRadius: "10px",
       }}
     >
       <Stack
         sx={{
-          flex: 1,
-          paddingBlock: "1.4rem",
-          paddingInline: "1.5rem",
+          paddingInline: "2rem",
+          paddingBlock: "1.7rem",
           flexDirection: "row",
-          alignItems: "center",
-          backgroundColor: "#008080",
-          borderRadius: "10px 10px 0px 0px",
+          backgroundColor:"#004687",
+          alignItems:"center",
+          borderRadius:"10px 10px 0px 0px"
         }}
       >
-        <Stack sx={{ flex: 1, gap: "1.5rem" }}>
+        <Stack sx={{ flex: 1, gap: "1.3rem" }}>
           <Box>
             <Typography
               variant={"h5"}
@@ -31,24 +31,19 @@ const ShoppingCard = () => {
               Shopping Card
             </Typography>
           </Box>
-          <Typography
-            variant={"h5"}
-            component={"p"}
-            sx={{ fontSize: "0.9rem", color: "white" }}
-          >
-            NAME
-          </Typography>
-        </Stack>
-        <Stack
-          sx={{
-            flex: 1,
-            gap: "1rem",
-            alignItems: "flex-end",
-            
-          }}
-        >
           <Box>
-            <PaymentIcon sx={{ fontSize: "1.5rem" }} />
+            <Typography
+              variant={"h5"}
+              component={"p"}
+              sx={{ fontSize: "0.9rem", color: "white" }}
+            >
+              NAME
+            </Typography>
+          </Box>
+        </Stack>
+        <Stack sx={{ flex: "1", gap: "1.3rem", alignItems: "flex-end" }}>
+          <Box>
+            <CreditCardIcon sx={{ fontSize: "1.5rem" }} />
           </Box>
           <Box>
             <Typography
@@ -56,7 +51,7 @@ const ShoppingCard = () => {
               component={"p"}
               sx={{ fontSize: "0.9rem", fontWeight: 600 }}
             >
-              Exp 26/6
+              Exp 24/3
             </Typography>
           </Box>
         </Stack>
@@ -65,26 +60,23 @@ const ShoppingCard = () => {
       <Stack
         sx={{
           flexDirection: "row",
-          paddingBlock: "1.2rem",
-          paddingInline: "1.3rem",
+          paddingInlineStart: "1.3rem",
+          backgroundColor: "#FF00FF",
+          paddingBlock: "1.3rem",
           alignItems: "center",
-          backgroundColor: "#90EE90",
           borderRadius: "0px 0px 10px 10px",
         }}
       >
-        <Box
-          sx={{
-            flex: 1,
-            fontWeight: "bold",
-            fontSize: "1.3rem",
-          }}
-        >
-          **** **** ** 0028
+        <Box sx={{ flex: 1, fontWeight: "bold", fontSize: "1.3rem" }}>
+          {" "}
+          **** **** ** 0024
         </Box>
         <i>
+          {" "}
           <Box
             sx={{
-              paddingInlineEnd: "1rem",
+              display: "flex",
+              paddingInlineEnd: "2rem",
               fontWeight: "bold",
               fontSize: "1.2rem",
             }}
@@ -97,4 +89,4 @@ const ShoppingCard = () => {
   );
 };
 
-export default ShoppingCard;
+export default ShoppingCard2;

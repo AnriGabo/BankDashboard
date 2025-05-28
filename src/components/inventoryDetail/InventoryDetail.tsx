@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import DetailsButton from "./DetailsButton";
 import Balance from "./Balance";
 import ShoppingCard from "./ShoppingCard";
+import ShoppingCard2 from "./ShoppingCard2";
 
 const InventoryDetail = () => {
   return (
@@ -41,8 +42,19 @@ const InventoryDetail = () => {
             Inventory Details
           </Typography>
         </Box>
-
-        <ShoppingCard />
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "2rem",
+            marginInline: "2rem",
+          }}
+        >
+          <ShoppingCard />
+          <ShoppingCard2 />
+          <ShoppingCard2 />
+        </Box>
       </Stack>
     </Box>
   );
